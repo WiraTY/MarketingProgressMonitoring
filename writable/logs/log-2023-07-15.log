@@ -1,0 +1,22 @@
+CRITICAL - 2023-07-15 04:18:33 --> Class "GroupModel" not found
+in APPPATH\Views\member\index.php on line 29.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('member/index', [], true)
+ 4 APPPATH\Controllers\MemberController.php(16): view('member/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\MemberController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci_crud\\public\\index.php')
+CRITICAL - 2023-07-15 06:15:05 --> Class "GroupModel" not found
+in APPPATH\Views\member\index.php on line 29.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('member/index', [], true)
+ 4 APPPATH\Controllers\MemberController.php(16): view('member/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\MemberController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci_crud\\public\\index.php')

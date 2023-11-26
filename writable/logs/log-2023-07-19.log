@@ -1,0 +1,235 @@
+INFO - 2023-07-19 23:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-19 23:27:46 --> mysqli_sql_exception: Unknown column 'nama_member' in 'field list' in C:\xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `nama_me...', 0)
+#1 C:\xampp\htdocs\ci_crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama_me...')
+#2 C:\xampp\htdocs\ci_crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama_me...')
+#3 C:\xampp\htdocs\ci_crud\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `nama_me...', Array, false)
+#4 C:\xampp\htdocs\ci_crud\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci_crud\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ci_crud\app\Models\KirimEmailModel.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ci_crud\app\Controllers\MemberController.php(285): App\Models\KirimEmailModel->getLaporan()
+#8 C:\xampp\htdocs\ci_crud\system\CodeIgniter.php(932): App\Controllers\MemberController->laporan()
+#9 C:\xampp\htdocs\ci_crud\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+#10 C:\xampp\htdocs\ci_crud\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci_crud\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci_crud\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-07-19 23:27:46 --> Unknown column 'nama_member' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `nama_member`, DAY(tgl_kirim_email) as day, COUNT(*) as jumlah
+FROM `tb_kirim_email`
+GROUP BY `nama_member`, `day`
+ORDER BY `nama_member`, `day`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama_member`, DAY(tgl_kirim_email) as day, COUNT(*) as jumlah
+FROM `tb_kirim_email`
+GROUP BY `nama_member`, `day`
+ORDER BY `nama_member`, `day`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama_member`, DAY(tgl_kirim_email) as day, COUNT(*) as jumlah
+FROM `tb_kirim_email`
+GROUP BY `nama_member`, `day`
+ORDER BY `nama_member`, `day`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `nama_member`, DAY(tgl_kirim_email) as day, COUNT(*) as jumlah
+FROM `tb_kirim_email`
+GROUP BY `nama_member`, `day`
+ORDER BY `nama_member`, `day`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\KirimEmailModel.php(18): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\MemberController.php(285): App\Models\KirimEmailModel->getLaporan()
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\MemberController->laporan()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci_crud\\public\\index.php')
+ERROR - 2023-07-19 23:30:15 --> mysqli_sql_exception: Unknown column 'nama_member' in 'field list' in C:\xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `nama_me...', 0)
+#1 C:\xampp\htdocs\ci_crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama_me...')
+#2 C:\xampp\htdocs\ci_crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama_me...')
+#3 C:\xampp\htdocs\ci_crud\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `nama_me...', Array, false)
+#4 C:\xampp\htdocs\ci_crud\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci_crud\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ci_crud\app\Models\KirimEmailModel.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ci_crud\app\Controllers\MemberController.php(285): App\Models\KirimEmailModel->getLaporan()
+#8 C:\xampp\htdocs\ci_crud\system\CodeIgniter.php(932): App\Controllers\MemberController->laporan()
+#9 C:\xampp\htdocs\ci_crud\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+#10 C:\xampp\htdocs\ci_crud\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci_crud\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci_crud\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-07-19 23:30:15 --> Unknown column 'nama_member' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `nama_member`, DAY(tgl_kirim_email) as day, COUNT(*) as jumlah
+FROM `tb_kirim_email`
+GROUP BY `nama_member`, `day`
+ORDER BY `nama_member`, `day`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama_member`, DAY(tgl_kirim_email) as day, COUNT(*) as jumlah
+FROM `tb_kirim_email`
+GROUP BY `nama_member`, `day`
+ORDER BY `nama_member`, `day`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama_member`, DAY(tgl_kirim_email) as day, COUNT(*) as jumlah
+FROM `tb_kirim_email`
+GROUP BY `nama_member`, `day`
+ORDER BY `nama_member`, `day`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `nama_member`, DAY(tgl_kirim_email) as day, COUNT(*) as jumlah
+FROM `tb_kirim_email`
+GROUP BY `nama_member`, `day`
+ORDER BY `nama_member`, `day`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\KirimEmailModel.php(18): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\MemberController.php(285): App\Models\KirimEmailModel->getLaporan()
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\MemberController->laporan()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci_crud\\public\\index.php')
+ERROR - 2023-07-19 23:30:16 --> mysqli_sql_exception: Unknown column 'nama_member' in 'field list' in C:\xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `nama_me...', 0)
+#1 C:\xampp\htdocs\ci_crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama_me...')
+#2 C:\xampp\htdocs\ci_crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama_me...')
+#3 C:\xampp\htdocs\ci_crud\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `nama_me...', Array, false)
+#4 C:\xampp\htdocs\ci_crud\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci_crud\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ci_crud\app\Models\KirimEmailModel.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ci_crud\app\Controllers\MemberController.php(285): App\Models\KirimEmailModel->getLaporan()
+#8 C:\xampp\htdocs\ci_crud\system\CodeIgniter.php(932): App\Controllers\MemberController->laporan()
+#9 C:\xampp\htdocs\ci_crud\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+#10 C:\xampp\htdocs\ci_crud\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci_crud\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci_crud\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-07-19 23:30:16 --> Unknown column 'nama_member' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `nama_member`, DAY(tgl_kirim_email) as day, COUNT(*) as jumlah
+FROM `tb_kirim_email`
+GROUP BY `nama_member`, `day`
+ORDER BY `nama_member`, `day`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama_member`, DAY(tgl_kirim_email) as day, COUNT(*) as jumlah
+FROM `tb_kirim_email`
+GROUP BY `nama_member`, `day`
+ORDER BY `nama_member`, `day`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama_member`, DAY(tgl_kirim_email) as day, COUNT(*) as jumlah
+FROM `tb_kirim_email`
+GROUP BY `nama_member`, `day`
+ORDER BY `nama_member`, `day`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `nama_member`, DAY(tgl_kirim_email) as day, COUNT(*) as jumlah
+FROM `tb_kirim_email`
+GROUP BY `nama_member`, `day`
+ORDER BY `nama_member`, `day`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\KirimEmailModel.php(18): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\MemberController.php(285): App\Models\KirimEmailModel->getLaporan()
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\MemberController->laporan()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci_crud\\public\\index.php')
+ERROR - 2023-07-19 23:32:31 --> mysqli_sql_exception: Unknown column 'nama_member' in 'field list' in C:\xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `nama_me...', 0)
+#1 C:\xampp\htdocs\ci_crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama_me...')
+#2 C:\xampp\htdocs\ci_crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama_me...')
+#3 C:\xampp\htdocs\ci_crud\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `nama_me...', Array, false)
+#4 C:\xampp\htdocs\ci_crud\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci_crud\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ci_crud\app\Models\KirimEmailModel.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ci_crud\app\Controllers\MemberController.php(285): App\Models\KirimEmailModel->getLaporan()
+#8 C:\xampp\htdocs\ci_crud\system\CodeIgniter.php(932): App\Controllers\MemberController->laporan()
+#9 C:\xampp\htdocs\ci_crud\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+#10 C:\xampp\htdocs\ci_crud\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci_crud\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci_crud\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-07-19 23:32:32 --> Unknown column 'nama_member' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `nama_member`, DATE_FORMAT(tgl_kirim_email, "%e") as day, COUNT(*) as jumlah
+FROM `tb_kirim_email`
+GROUP BY `nama_member`, `day`
+ORDER BY `nama_member`, `day`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama_member`, DATE_FORMAT(tgl_kirim_email, "%e") as day, COUNT(*) as jumlah
+FROM `tb_kirim_email`
+GROUP BY `nama_member`, `day`
+ORDER BY `nama_member`, `day`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama_member`, DATE_FORMAT(tgl_kirim_email, "%e") as day, COUNT(*) as jumlah
+FROM `tb_kirim_email`
+GROUP BY `nama_member`, `day`
+ORDER BY `nama_member`, `day`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `nama_member`, DATE_FORMAT(tgl_kirim_email, "%e") as day, COUNT(*) as jumlah
+FROM `tb_kirim_email`
+GROUP BY `nama_member`, `day`
+ORDER BY `nama_member`, `day`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\KirimEmailModel.php(18): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\MemberController.php(285): App\Models\KirimEmailModel->getLaporan()
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\MemberController->laporan()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci_crud\\public\\index.php')
+ERROR - 2023-07-19 23:32:36 --> mysqli_sql_exception: Unknown column 'nama_member' in 'field list' in C:\xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ci_crud\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `nama_me...', 0)
+#1 C:\xampp\htdocs\ci_crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama_me...')
+#2 C:\xampp\htdocs\ci_crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama_me...')
+#3 C:\xampp\htdocs\ci_crud\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `nama_me...', Array, false)
+#4 C:\xampp\htdocs\ci_crud\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci_crud\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ci_crud\app\Models\KirimEmailModel.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ci_crud\app\Controllers\MemberController.php(285): App\Models\KirimEmailModel->getLaporan()
+#8 C:\xampp\htdocs\ci_crud\system\CodeIgniter.php(932): App\Controllers\MemberController->laporan()
+#9 C:\xampp\htdocs\ci_crud\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+#10 C:\xampp\htdocs\ci_crud\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci_crud\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci_crud\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-07-19 23:32:36 --> Unknown column 'nama_member' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `nama_member`, DATE_FORMAT(tgl_kirim_email, "%e") as day, COUNT(*) as jumlah
+FROM `tb_kirim_email`
+GROUP BY `nama_member`, `day`
+ORDER BY `nama_member`, `day`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama_member`, DATE_FORMAT(tgl_kirim_email, "%e") as day, COUNT(*) as jumlah
+FROM `tb_kirim_email`
+GROUP BY `nama_member`, `day`
+ORDER BY `nama_member`, `day`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama_member`, DATE_FORMAT(tgl_kirim_email, "%e") as day, COUNT(*) as jumlah
+FROM `tb_kirim_email`
+GROUP BY `nama_member`, `day`
+ORDER BY `nama_member`, `day`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `nama_member`, DATE_FORMAT(tgl_kirim_email, "%e") as day, COUNT(*) as jumlah
+FROM `tb_kirim_email`
+GROUP BY `nama_member`, `day`
+ORDER BY `nama_member`, `day`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\KirimEmailModel.php(18): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\MemberController.php(285): App\Models\KirimEmailModel->getLaporan()
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\MemberController->laporan()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci_crud\\public\\index.php')
+CRITICAL - 2023-07-19 23:35:21 --> Invalid file: "laporan.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('laporan', [], true)
+ 3 APPPATH\Controllers\MemberController.php(289): view('laporan', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\MemberController->laporan()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci_crud\\public\\index.php')
+INFO - 2023-07-19 23:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-07-19 23:38:25 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\MemberController.php on line 164.
+ 1 APPPATH\Controllers\MemberController.php(164): password_hash(Object(SensitiveParameterValue), '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\MemberController->simpan_kirim_email()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci_crud\\public\\index.php')
+INFO - 2023-07-19 23:38:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
