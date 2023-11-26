@@ -6,7 +6,7 @@ Website Marketing Progress Monitoring (MPM) dibuat untuk melakukan monitoring pe
 <img src="https://github.com/WiraTY/MarketingProgressMonitoring/assets/108583774/ad0bcd4a-9f80-43c8-8722-e201c7c68276" width="1000" height="500">
 <img src="https://github.com/WiraTY/MarketingProgressMonitoring/assets/108583774/8e395a66-d64d-4907-afb3-79c0460196d3" width="1000" height="500">
 <img src="https://github.com/WiraTY/MarketingProgressMonitoring/assets/108583774/5c3d3630-a54a-4400-ac58-fd28bb121b26" width="1000" height="500">
-<img src="https://github.com/WiraTY/MarketingProgressMonitoring/assets/108583774/a67e4e5f-0141-4ebd-a578-e43edf11fade" width="1000" height="500">
+<img src="https://github.com/WiraTY/MarketingProgressMonitoring/assets/108583774/6b88d473-92c4-4e8e-8f15-45c79115c207" width="1000" height="500">
 <img src="https://github.com/WiraTY/MarketingProgressMonitoring/assets/108583774/481d974a-5964-4dd1-a80d-72fd8688a84a" width="1000" height="500">
 <img src="https://github.com/WiraTY/MarketingProgressMonitoring/assets/108583774/f44faf84-3df8-4435-8006-e5d0d8ae449a" width="1000" height="500">
 
